@@ -1,0 +1,35 @@
+% Constants
+\definecolor{uwpurple}{RGB}{51,0,111}
+\definecolor{uwblack}{RGB}{0, 0, 0}
+\definecolor{uwgold}{RGB}{232,211,162}
+\definecolor{cffffff}{RGB}{255,255,255}
+\definecolor{utlimestone}{RGB}{214, 210, 196}
+\definecolor{uwmetallicgold}{RGB}{145,123,76}
+
+\newcommand{\progressbar}{2pt}
+
+% Captions
+\captionsetup[figure]{labelfont={bf,color=uwblack}}
+\captionsetup[table]{labelfont={bf,color=uwblack}}
+
+% Progress Bar
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{\progressbar}
+\setlength{\metropolis@progressonsectionpage@linewidth}{\progressbar}
+\setlength{\metropolis@progressinheadfoot@linewidth}{\progressbar}
+\makeatother
+
+% Slide colors
+\setbeamercolor{alerted text}{fg=uwpurple}
+\setbeamercolor{example text}{fg=uwpurple}
+\setbeamercolor{palette primary}{bg=uwpurple}
+\setbeamercolor{bibliography entry location}{fg=uwpurple}
+\setbeamercolor{frametitle}{bg=uwpurple, fg=cffffff}
+\setbeamercolor{progress bar}{fg=uwpurple,bg=uwgold}
+\setbeamercolor{background canvas}{bg=white}
+
+
+\setbeamertemplate{frame footer}{\insertshortauthor ~ \hfill\insertshorttitle}
+
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamercolor{footline}{fg=uwblack}

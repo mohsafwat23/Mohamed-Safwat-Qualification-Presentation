@@ -1,0 +1,85 @@
+\documentclass[9pt]{beamer}
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage[small,bf]{caption}
+\usepackage{UWMetropolis}
+
+\usepackage{movie15}
+% \usepackage{multimedia}
+
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[english]{babel}
+\usepackage{pgfplots}	
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark,shapes,positioning}
+\usepackage{multirow}
+
+% \usepackage{movie15}
+
+
+\newcommand{\flag}{0}% 0 for class, 1 for workshop
+\newcommand{\redpause}{\addtocounter{beamerpauses}{-1}\pause\color<+>{red}}
+
+\newcommand{\propnumber}{} % initialize
+\newtheorem{prop}{Proposition \propnumber}
+
+\newtheorem{assum}{Assumption}
+
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!uwpurple}
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+
+\addtocounter{figure}{1}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace} % Can be removed
+
+\title{Decentralized Multi-Robot Task Assignment (MRTA)}
+\subtitle{PhD Qualifying Exam}
+\date{\today}
+\author{\textbf{Mohamed Safwat}}
+\institute{Department of Mechanical Engineering, \\ University of Washington Seattle}
+\titlegraphic{
+    \hfill
+	\includegraphics[scale=0.35]{UWLogo.eps}
+}
+\setbeamercovered{transparent}
+
+\input defs.tex
+
+\begin{document}
+
+\maketitle
+\setbeamercolor{progress bar}{fg=uwgold,bg=uwmetallicgold}
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Literature Review}
+\include{tex_slides/literature_review}
+
+\section{Paper Review}
+\include{tex_slides/paper_review}
+
+\section{Research Plan}
+\include{tex_slides/research_plan}
+\appendix
+
+\begin{frame}[allowframebreaks]{References}
+    \bibliographystyle{unsrt}
+    \bibliography{ref}
+\end{frame}
+
+
+
+\end{document}
+
